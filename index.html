@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jack Shen</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav id="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">JS</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">關於</a></li>
+        <li><a href="#skills">專長</a></li>
+        <li><a href="#work">經歷</a></li>
+        <li><a href="#blog">文章</a></li>
+        <li><a href="#contact">聯絡</a></li>
       </ul>
     </div>
   </nav>
 
   <section id="hero">
     <div class="container hero-content">
-      <h1 class="hero-title">Jack Shen</h1>
-      <p class="hero-subtitle">Product Leader &amp; Builder</p>
-      <p class="hero-desc">Building products that matter — from concept to scale.</p>
-      <a href="#work" class="btn btn-primary">View My Work</a>
+      <div class="hero-avatar">
+        <img src="photo.jpg" alt="Jack Shen" id="avatar-img">
+        <div class="avatar-placeholder" id="avatar-placeholder">JS</div>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-title">Jack Shen</h1>
+        <p class="hero-subtitle">產品領導者 &amp; 創業者</p>
+        <p class="hero-desc">從概念到規模化，打造真正有影響力的產品</p>
+        <a href="#work" class="btn btn-primary">看我的作品</a>
+      </div>
     </div>
   </section>
 
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <p>Product leader with experience across consumer electronics, SaaS, and education technology. I've led product strategy and execution at companies like Miraterra, Glowforge, TrackR, and Sony, bringing products from zero to launch and beyond.</p>
-        <p>My work spans product management, design, and operations — grounded in user research, data, and clean execution. Currently based in Vancouver, building the next thing.</p>
+      <h2 class="section-title">關於我</h2>
+      <div class="about-layout">
+        <div class="about-photo">
+          <img src="about-photo.jpg" alt="Jack Shen" id="about-img">
+          <div class="about-photo-placeholder" id="about-photo-placeholder">
+            <span>你的照片</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p>橫跨消費電子、SaaS 與教育科技的產品領導者。曾在 Miraterra、Glowforge、TrackR、Sony 等公司帶領產品策略與執行，從零到一打造產品並推向規模化。</p>
+          <p>我的經歷涵蓋產品管理、設計與營運——紮根於用戶研究、數據驅動與乾淨的執行力。目前駐點溫哥華，打造下一個產品。</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="skills">
     <div class="container">
-      <h2 class="section-title">Skills &amp; Expertise</h2>
+      <h2 class="section-title">專業領域</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>Product Strategy</h3>
-          <p>Roadmapping, prioritization, Go-To-Market, stakeholder alignment</p>
+          <h3>產品策略</h3>
+          <p>路線圖規劃、優先級排序、上市策略、利害關係人協調</p>
         </div>
         <div class="skill-card">
-          <h3>Product Design</h3>
-          <p>UX research, interaction design, prototyping, design systems</p>
+          <h3>產品設計</h3>
+          <p>用戶研究、互動設計、原型製作、設計系統</p>
         </div>
         <div class="skill-card">
-          <h3>Technical</h3>
-          <p>TypeScript, React, Python, data analysis, AI/ML product integration</p>
+          <h3>技術開發</h3>
+          <p>TypeScript、React、Python、數據分析、AI/ML 產品整合</p>
         </div>
         <div class="skill-card">
-          <h3>Leadership</h3>
-          <p>Team building, cross-functional execution, mentorship</p>
+          <h3>團隊領導</h3>
+          <p>團隊建立、跨職能協作、導師指導</p>
         </div>
       </div>
     </div>
@@ -67,27 +81,27 @@
 
   <section id="work">
     <div class="container">
-      <h2 class="section-title">Selected Work</h2>
+      <h2 class="section-title">代表經歷</h2>
       <div class="work-grid">
         <div class="work-card">
           <div class="work-img" style="background:#2d3a4a;"><span class="work-placeholder">Miraterra</span></div>
           <div class="work-info">
             <h3>Miraterra Inc.</h3>
-            <p>Director of Product Management — leading product for a climate-focused ag-tech platform.</p>
+            <p>產品管理總監 — 帶領氣候科技農業平台的產品發展</p>
           </div>
         </div>
         <div class="work-card">
           <div class="work-img" style="background:#2d3a4a;"><span class="work-placeholder">Glowforge</span></div>
           <div class="work-info">
             <h3>Glowforge</h3>
-            <p>Principal Product Manager — shipped 3D laser printing hardware &amp; software experiences.</p>
+            <p>首席產品經理 — 推出 3D 雷射列印硬體與軟體體驗</p>
           </div>
         </div>
         <div class="work-card">
           <div class="work-img" style="background:#2d3a4a;"><span class="work-placeholder">TrackR</span></div>
           <div class="work-info">
             <h3>TrackR / Adero</h3>
-            <p>Director of Product — built Bluetooth tracking platform used by millions.</p>
+            <p>產品總監 — 打造服務數百萬用戶的藍牙追蹤平台</p>
           </div>
         </div>
       </div>
@@ -96,13 +110,13 @@
 
   <section id="blog">
     <div class="container">
-      <h2 class="section-title">Blog</h2>
-      <p class="section-desc">Thoughts on product, technology, and building.</p>
+      <h2 class="section-title">部落格</h2>
+      <p class="section-desc">產品、科技與創業的思考</p>
       <div class="blog-list">
         <article class="blog-card">
-          <span class="blog-date">Coming soon</span>
-          <h3>First post — stay tuned</h3>
-          <p>I'm working on my first article. Check back soon.</p>
+          <span class="blog-date">即將推出</span>
+          <h3>第一篇文章 — 敬請期待</h3>
+          <p>我正在撰寫第一篇文章，很快與你見面。</p>
         </article>
       </div>
     </div>
@@ -110,9 +124,9 @@
 
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-desc">Have a question or want to work together?</p>
-      <a href="mailto:hello@jackshen.com" class="btn btn-primary">Send me an email</a>
+      <h2 class="section-title">聯絡我</h2>
+      <p class="section-desc">有任何問題或合作想談？</p>
+      <a href="mailto:hello@jackshen.com" class="btn btn-primary">寄信給我</a>
       <div class="social-links">
         <a href="https://github.com/jackshen" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/jackshen" target="_blank">LinkedIn</a>

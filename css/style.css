@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1a2332;
   background: #fff;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .container {
@@ -75,27 +75,63 @@ body {
 }
 
 .hero-content {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-avatar {
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255,255,255,0.2);
+  position: relative;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-placeholder {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #2d3a4a;
+  color: rgba(255,255,255,0.3);
+  font-size: 3rem;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  flex: 1;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -2px;
   margin-bottom: 8px;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: rgba(255,255,255,0.6);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .hero-desc {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: rgba(255,255,255,0.5);
   margin-bottom: 32px;
+  line-height: 1.6;
 }
 
 .btn {
@@ -151,14 +187,49 @@ section:nth-child(even) {
 }
 
 /* About */
+.about-layout {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.about-photo {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-photo-placeholder {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #e8eaed;
+  color: #999;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-content {
-  max-width: 700px;
+  flex: 1;
+  min-width: 0;
 }
 
 .about-content p {
   margin-bottom: 16px;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #444;
+  line-height: 1.8;
 }
 
 /* Skills */
@@ -191,6 +262,7 @@ section:nth-child(even) {
 .skill-card p {
   font-size: 0.9rem;
   color: #666;
+  line-height: 1.7;
 }
 
 /* Work */
@@ -236,6 +308,7 @@ section:nth-child(even) {
 .work-info p {
   font-size: 0.88rem;
   color: #666;
+  line-height: 1.7;
 }
 
 /* Blog */
@@ -304,10 +377,29 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-avatar {
+    width: 160px;
+    height: 160px;
+  }
   .hero-title { font-size: 2.5rem; }
   .hero-subtitle { font-size: 1.1rem; }
   .nav-links { gap: 16px; }
   .nav-links a { font-size: 0.8rem; }
+
+  .about-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-photo {
+    width: 160px;
+    height: 160px;
+  }
+
   section { padding: 64px 0; }
 }
